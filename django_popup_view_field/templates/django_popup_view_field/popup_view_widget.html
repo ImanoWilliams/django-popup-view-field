@@ -14,16 +14,16 @@
     />
 
     <div class="input-group-append popup-view-btn-clear" data-target="{{ widget.attrs.id }}">
-        <button class="btn btn-success" type="submit">Go</button>
+        <button class="btn btn-outline-danger" type="submit">{% icon 'remove' %}</button>
     </div>
 
     <div
-        class="input-group-append btn popup-view-btn-load"
+        class="input-group-append popup-view-btn-load"
         data-target="{{ widget.attrs.id }}"
         data-popup-dialog-title="{{ widget.popup_dialog_title }}"
         data-url = "{{ widget.url }}"
     >
-        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        <button class="btn btn-outline-success" type="submit">{% icon 'search' %}</button>
     </div>
 </div>
 {% endspaceless %}
