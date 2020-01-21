@@ -13,12 +13,12 @@
         {% endfor %}
     />
 
-    <div class="input-group-addon btn popup-view-btn-clear" data-target="{{ widget.attrs.id }}">
-        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+    <div class="input-group-append popup-view-btn-clear" data-target="{{ widget.attrs.id }}">
+        <button class="btn btn-success" type="submit">Go</button>
     </div>
 
     <div
-        class="input-group-addon btn popup-view-btn-load"
+        class="input-group-append btn popup-view-btn-load"
         data-target="{{ widget.attrs.id }}"
         data-popup-dialog-title="{{ widget.popup_dialog_title }}"
         data-url = "{{ widget.url }}"

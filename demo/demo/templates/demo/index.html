@@ -1,18 +1,17 @@
 {% extends "base.html" %}
-{% load bootstrap3 %}
+{% load bootstrap4 %}
 {% load crispy_forms_tags %}
-
-
+{% load icons %}
 {% block content %}
 
-    <h1> Demo - django-popup-view-field </h1>
+    <h1>  {% icon 'pencil' %}Demo - django-popup-view-field </h1>
 
     <div>
         <ul class="nav nav-tabs" role="tablist" id="tabs" data-toggle="tab">
             <li role="presentation" class="active">
                 <a href="#bootstrap" aria-controls="bootstrap" role="tab" data-toggle="tab">
-                    <span class="glyphicon glyphicon-star"></span>
-                    Form using django-bootstrap3
+
+                     Form using django-bootstrap3
                 </a>
             </li>
 
@@ -41,7 +40,7 @@
                     {% bootstrap_form form_1 %}
                     {% buttons %}
                         <button type="submit" class="btn btn-primary">
-                            {% bootstrap_icon "star" %} Submit
+                             Submit
                         </button>
                     {% endbuttons %}
                 </form>
