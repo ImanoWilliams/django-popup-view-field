@@ -1,6 +1,7 @@
 Django==2.1.8
 tox>=2.5.0
 django-bootstrap3
+django-bootstrap4
 django-crispy-forms
 twine
 flake8

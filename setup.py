@@ -24,7 +24,7 @@ setup(
         'static/django_popup_view_field/js/*',
         'locale/pl/LC_MESSAGES/*'
     ]},
-    tests_require=['Django', 'django-bootstrap3', 'django-crispy-forms'],
+    tests_require=['Django', 'django-bootstrap3', 'django-bootstrap4', 'django-crispy-forms'],
     include_package_data=True,
     zip_safe=False,
     install_requires=['Django>=1.8'],
